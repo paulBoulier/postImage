@@ -1,0 +1,94 @@
+[name="submit"] {
+    text-transform: uppercase;
+}
+
+[name="submit"]::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-upload' viewBox='0 0 16 16'%3E%3Cpath d='M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z'/%3E%3Cpath d='M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z'/%3E%3C/svg%3E");
+}
+
+header {
+    background-color: rgb(224, 235, 240);
+    padding: 2rem;
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+label,
+button {
+    display: block;
+}
+
+label {
+    align-self: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid grey;
+    width: max-content;
+    /* display: inline-block; */
+    background-color: #d4cdcd;
+    position: relative;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-text {
+    white-space: nowrap;
+}
+
+/* label::after {white-space: nowrap;
+position: absolute;
+right: -1rem;
+transform: translateX(100%);
+word-wrap: normal;
+content: "Aucun fichier sélectionné";
+}
+
+*/
+
+h1 {
+    font-weight: lighter;
+    font-size: calc(2.375rem + 1.5vw);
+    word-wrap: break-word;
+}
+
+.box {
+    display: flex;
+    margin: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(173, 167, 167, 0.507);
+}
+
+.wrapper {
+    padding: 1rem;
+    flex: 1;
+}
+
+.wrapper:first-child {
+    background-color: #f3f2f2;
+}
+
+.wrapper img {
+    width: 100%;
+}
+
+.validation-icon {
+    font-size: 4rem;
+    color: green;
+    margin-left: auto;
+    margin-right: auto;
+}
